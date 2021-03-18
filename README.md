@@ -1,2 +1,3 @@
-# saxophone-marketing-site
+# The Saxophone Store
+
 An example marketing site for a fictional saxophone store.
