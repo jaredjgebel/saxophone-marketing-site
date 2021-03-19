@@ -1,15 +1,16 @@
 .container {
   min-height: 100vh;
   background-color: var(--bgColor);
+  font-family: var(--headingFont);
+  color: var(--headingColor);
 }
 
 /* Header */
 
 .header {
   width: 100%;
-  font-family: var(--headingFont);
-  font-size: var(--headingTwoSize);
-  color: var(--headingColor);
+  font-size: var(--smallBodySize);
+  padding: 5px;
 }
 
 .headerNav {
@@ -18,11 +19,134 @@
   justify-content: space-between;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
+.headerNavRight {
+  text-align: right;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  height: 600px;
+}
+
+@media (min-width: 425px) {
+  .hero {
+    height: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 1000px;
+  }
+}
+
+.hero::before {
+  content: "";
+  background-image: url("../public/janis-straume.webp");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+@media (min-width: 768px) {
+  .hero::before {
+    background-size: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero::before {
+    background-size: 800px;
+  }
+}
+
+.heroText {
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Horizontal panels */
+
+.panels {
+  display: flex;
+  justify-content: space-evenly;
+  height: 20px;
+  margin: 36px 0;
+}
+
+.panelOne {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelOne);
+}
+
+.panelTwo {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelTwo);
+}
+
+.panelThree {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelThree);
+}
+
+/* Content sections */
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sectionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 40ch;
+  text-align: center;
+  width: 100%;
+}
+
+.sectionSubheading {
+  font-size: var(--headingTwoSize);
+  text-align: center;
+}
+
+.sectionBody {
+  font-family: var(--bodyFont);
+  font-size: var(--smallBodySize);
 }
