@@ -61,6 +61,13 @@ export default function Home() {
         </div>
 
         <div className={styles.section}>
+          <div className={styles.sectionText}>
+            <h2 className={styles.sectionSubheading}>Variety</h2>
+            <p className={styles.sectionBody}>
+              We offer a variety of brands from across the globe to find the
+              very best saxophone for you.
+            </p>
+          </div>
           <div className={styles.sectionImage}>
             <Image
               src="/gabe-rebra.webp"
@@ -68,13 +75,6 @@ export default function Home() {
               width={400}
               height={600}
             />
-          </div>
-          <div className={styles.sectionText}>
-            <h2 className={styles.sectionSubheading}>Variety</h2>
-            <p className={styles.sectionBody}>
-              We offer a variety of brands from across the globe to find the
-              very best saxophone for you.
-            </p>
           </div>
         </div>
 
@@ -111,6 +111,17 @@ export default function Home() {
 
         <div className={styles.contact}>
           <h2>Location & Hours</h2>
+          <div className={styles.locationHours}>
+            <div className={styles.location}>
+              <p>3456 Fictional Lane</p>
+              <p>800-444-7777</p>
+            </div>
+            <div className={styles.hours}>
+              <p>
+                Sunday-Thursday: <span>10 am-4 pm</span>
+              </p>
+            </div>
+          </div>
         </div>
       </main>
     </div>

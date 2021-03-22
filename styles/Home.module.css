@@ -117,6 +117,7 @@
 .section {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 64px 0;
 }
 
 @media (min-width: 768px) {
@@ -129,6 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 32px 64px;
 }
 
 .sectionText {
@@ -136,11 +138,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 40ch;
   text-align: center;
   width: 100%;
+  padding-top: 36px;
 }
 
+@media (min-width: 768px) {
+  .sectionText {
+    padding: 0 10px;
+  }
+}
 .sectionSubheading {
   font-size: var(--headingTwoSize);
   text-align: center;
@@ -149,4 +156,32 @@
 .sectionBody {
   font-family: var(--bodyFont);
   font-size: var(--smallBodySize);
+  max-width: 32ch;
+}
+
+/* Contact */
+.contact {
+  height: 600px;
+  font-size: var(--bodySize);
+}
+
+.contact h2 {
+  font-size: var(--headingTwoSize);
+  text-align: center;
+  align-self: stretch;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.locationHours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.locationHours p {
+  margin: 0;
 }
