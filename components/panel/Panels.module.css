@@ -1,0 +1,26 @@
+/* Horizontal panels */
+
+.panels {
+  display: flex;
+  justify-content: space-evenly;
+  height: 20px;
+  margin: 36px 0;
+}
+
+.panelOne {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelOne);
+}
+
+.panelTwo {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelTwo);
+}
+
+.panelThree {
+  width: 30%;
+  height: 100%;
+  background-color: var(--horizontalPanelThree);
+}

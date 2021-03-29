@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+
+import Panels from "../components/panel/Panels";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -30,11 +32,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.panels}>
-          <div className={styles.panelOne}></div>
-          <div className={styles.panelTwo}></div>
-          <div className={styles.panelThree}></div>
-        </div>
+        <Panels />
 
         <div className={styles.section}>
           <div className={styles.sectionImage}>
@@ -54,11 +52,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.panels}>
-          <div className={styles.panelOne}></div>
-          <div className={styles.panelTwo}></div>
-          <div className={styles.panelThree}></div>
-        </div>
+        <Panels />
 
         <div className={styles.section}>
           <div className={styles.sectionText}>
@@ -78,11 +72,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.panels}>
-          <div className={styles.panelOne}></div>
-          <div className={styles.panelTwo}></div>
-          <div className={styles.panelThree}></div>
-        </div>
+        <Panels />
 
         <div className={styles.section}>
           <div className={styles.sectionImage}>
@@ -103,11 +93,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.panels}>
-          <div className={styles.panelOne}></div>
-          <div className={styles.panelTwo}></div>
-          <div className={styles.panelThree}></div>
-        </div>
+        <Panels />
 
         <div className={styles.contact}>
           <h2>Location & Hours</h2>
