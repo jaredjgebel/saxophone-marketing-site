@@ -19,7 +19,7 @@ export default function Home() {
 
       <header className={styles.header}>
         <nav className={styles.headerNav}>
-          <a href="#">Location & Hours</a>
+          <a href="#contact">Location & Hours</a>
           <div className={styles.headerNavRight}>The Saxophone Store</div>
         </nav>
       </header>
@@ -95,8 +95,10 @@ export default function Home() {
 
         <Panels />
 
-        <div className={styles.contact}>
-          <h2>Location & Hours</h2>
+        <div name="contact" className={styles.contact}>
+          <h2>
+            <a name="contact">Location & Hours</a>
+          </h2>
           <div className={styles.locationHours}>
             <div className={styles.location}>
               <p>3456 Fictional Lane</p>
